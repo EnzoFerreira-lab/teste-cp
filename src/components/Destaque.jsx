@@ -8,7 +8,7 @@ export default function Destaque() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % imagens.length)
-    }, 3000) // troca a cada 3 segundos
+    }, 3000)
     return () => clearInterval(interval)
   }, [])
 
